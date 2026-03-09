@@ -57,4 +57,4 @@ echo "Configuration generated."
 echo "Starting NullClaw on port $PORT..."
 
 # Start nullclaw gateway
-exec nullclaw gateway --port $PORT
+exec nullclaw gateway --bind 0.0.0.0:$PORT
