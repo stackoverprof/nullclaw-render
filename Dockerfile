@@ -1,7 +1,7 @@
 FROM alpine:3.20
 
 # Install dependencies (curl, jq for JSON generation)
-RUN apk add --no-cache curl jq libgcc libstdc++ pcompat gcompat caddy
+RUN apk add --no-cache curl jq
 
 # Create a non-root user
 RUN addgroup -S nullclaw && adduser -S nullclaw -G nullclaw
