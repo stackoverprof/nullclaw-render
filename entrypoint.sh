@@ -47,6 +47,7 @@ jq -n \
       }
     },
     "gateway": {
+      "host": "0.0.0.0",
       "port": ($port | tonumber),
       "require_pairing": false,
       "allow_public_bind": true
@@ -57,4 +58,4 @@ echo "Configuration generated."
 echo "Starting NullClaw on port $PORT..."
 
 # Start nullclaw gateway
-exec nullclaw gateway --bind 0.0.0.0:$PORT
+exec nullclaw gateway --port $PORT
